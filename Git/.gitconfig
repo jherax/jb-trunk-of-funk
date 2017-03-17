@@ -1,0 +1,34 @@
+[user]
+	name = John Nolan
+	email = <email>
+[core]
+	autocrlf = true
+	eol = crlf
+	whitespace = cr-at-eol
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+[diff]
+	tool = kdiff3
+	guitool = kdiff3
+[difftool]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[merge]
+	tool = bc4
+[pull]
+	rebase = true
+[alias]
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	le = log --oneline --decorate
+
+	dt = difftool
+	mt = mergetool
+	grbd = rebase develop
+	gcb = checkout
+	gcd = checkout develop
+	gpl = pull origin develop
+	gpo = push -f origin
+[mergetool]
+	keepBackup = false
