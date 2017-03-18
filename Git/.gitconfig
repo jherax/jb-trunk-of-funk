@@ -16,11 +16,11 @@
 [pull]
 	rebase = true
 [alias]
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	ls = log --pretty=format:"%C(#D2AA45)%h%Cred%d\\ %Creset%s%C(#5FAFF5)\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(#D2AA45)%h%Cred%d\\ %Creset%s%C(#5FAFF5)\\ [%cn]" --decorate --numstat
 	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
-	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
-	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	lds = log --pretty=format:"%C(#D2AA45)%h\\ %ad%Cred%d\\ %Creset%s%C(#5FAFF5)\\ [%cn]" --decorate --date=short
+	ld = log --pretty=format:"%C(#D2AA45)%h\\ %ad%Cred%d\\ %Creset%s%C(#5FAFF5)\\ [%cn]" --decorate --date=relative
 	le = log --oneline --decorate
 
 	p = push
